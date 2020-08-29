@@ -1,0 +1,3 @@
+df = df.set_index([df.index, 'Name'])
+df.index.names = ['Location', 'Name']
+df = df.append(pd.Series(data={'Cost': 3.00, 'Item Purchased': 'Kitty Food'}, name=('Store 2', 'Kevyn')))
